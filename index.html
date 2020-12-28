@@ -11,13 +11,33 @@
   </style>
  </head>
  <body>
+	<script>
+	Zarak = () => {alert('Зарак лох объективно')}
+	changeImage = () => {
+		document.getElementById('main_image').src = document.getElementById('select').value
+	}
+	
+	</script>
 
   <div class="text">
-	<img src="test.jpg" style="width: 383px;">
+	<img id="main_image" src="test.jpg" style="height: 383px;">
+	
+	<p>
+		<select id="select" id="select">
+		<option value="test.jpg">1 картинка</option>
+		<option value="my_love.jpg">2 картинка</option>
+		</select>
+		<button onclick="changeImage()">Поменять картинку</button>
+	</p>
+
+	
+
 	<p style="color: rgb(97, 189, 109);">Вы узнаёте этих людей?</p>
 	<p style="color: rgb(97, 189, 109);">Они крайне опасны. Будьте бдительны.</p>
 	
 	<p style="color: rgb(225, 225, 225);">Ярик лох, кста</p>
+	<input type="button" value="Нажми на меня" onclick="Zarak()">
+	<a href='yarik/index.html'><p>Линк на нейронку</p></a>
   </div>
   
  </body>
